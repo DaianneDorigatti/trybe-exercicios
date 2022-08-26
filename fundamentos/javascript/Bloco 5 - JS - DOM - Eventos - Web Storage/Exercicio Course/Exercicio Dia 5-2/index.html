@@ -12,6 +12,7 @@ nextElementSibling: retorna o próximo elemento.
 previousSibling: retorna o nó anterior.
 previousElementSibling: retorna o elemento anterior. -->
 
+<!DOCTYPE html>
 <main id="paiDoPai">
   <section id="pai">
     <section id="primeiroFilho"></section>
@@ -27,7 +28,7 @@ previousElementSibling: retorna o elemento anterior. -->
 
 <script>
   //Acesse o elemento elementoOndeVoceEsta.
-  const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
+  //const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
 
   //Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
 
@@ -58,4 +59,85 @@ previousElementSibling: retorna o elemento anterior. -->
   //Agora acesse o terceiroFilho a partir de pai.
 
   const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+
+  //Crie um irmão para elementoOndeVoceEsta.
+
+  const pai = document.getElementById("pai"); // Recupere o elemento com o id pai
+  const irmaoElementoOndeVoceEsta = document.createElement("section"); // Crie um novo elemento
+  irmaoElementoOndeVoceEsta.id = "irmaoElementoOndeVoceEsta";
+  pai.appendChild(irmaoElementoOndeVoceEsta); // Adicione o elemento criado como filho do elemento com o id `pai`
+
+  //Crie um filho para elementoOndeVoceEsta.
+
+  const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta"); // Recupere o elemento com o id elementoOndeVoceEsta
+  const filhoElementoOndeVoceEsta = document.createElement("section"); // Crie um novo elemento
+  filhoElementoOndeVoceEsta.id = "filhoElementoOndeVoceEsta";
+  elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta); // Adicione o elemento criado como filho do elemento `elementoOndeVoceEsta`
+
+  //Crie um filho para primeiroFilhoDoFilho.
+
+  const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho"); // Recupere o elemento com o id `primeiroFilhoDoFilho`
+  const filhoPrimeiroFilhoDoFilho = document.createElement("section"); // Crie um novo elemento
+  filhoPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho";
+  primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho); // Adicione o elemento criado como filho do elemento `primeiroFilhoDoFilho`
+
+  //A partir desse filho criado, acesse terceiroFilho.
+
+  const terceiroFilho =
+    filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling; // primeiroFilhoDoFilho // elementoOndeVoceEsta // terceiroFilho
+  console.log(terceiroFilho);
+
+  //Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+  //Primeiro passo: Recupere o elemento com o id pai
+  const pai = document.getElementById('pai');
+
+  //Segundo passo: Utilize o .childNodes para retornar uma coleção viva de nós filhos do elemento pai.
+  const pai = document.getElementById('pai');
+  const todosOsFilhos = pai.childNodes;
+
+  //Terceiro passo: Utilize uma estrutura de repetição para iterar sob o nodeList todosOsFilhos do último ao primeiro elemento.
+  // Nesse aspecto, o nodeList se comporta como um array, acessível por índice numérico.
+  //Utilize o .length para verificar o tamanho que todosOsFilhos possui;
+  //Como a primeira posição de um nodeList (assim como no array) é a posição 0,
+  //subtraia 1 do tamanho de todosOsFilhos para obter a expressão inicial (índice);
+  //Decremente o index a cada iteração.
+  const pai = document.getElementById('pai');
+    const todosOsFilhos = pai.childNodes;
+
+    for (let index = todosOsFilhos.length - 1; index >= 0; index -= 1) {
+    }
+
+  //Quarto passo: Armazene o filho atual em uma variável.
+  const pai = document.getElementById('pai');
+    const todosOsFilhos = pai.childNodes;
+
+    for (let index = todosOsFilhos.length - 1; index >= 0; index -= 1) {
+      const filhoAtual = todosOsFilhos[index];
+
+  //Quinto passo: Caso o id do filhoAtual seja diferente de elementoOndeVoceEsta, remova o filhoAtual.
+
+    const pai = document.getElementById('pai');
+    const todosOsFilhos = pai.childNodes;
+
+    for (let index = todosOsFilhos.length - 1; index >= 0; index -= 1) {
+      const filhoAtual = todosOsFilhos[index];
+      if (filhoAtual.id !== 'elementoOndeVoceEsta') { // Verifica se o id do filho atual é diferente de 'elementoOndeVoceEsta'
+        filhoAtual.remove(); // Remove o filhoAtual
+      }
+    }
+
+  //Sexto passo: Recupere o elemento com o id segundoEUltimoFilhoDoFilho e o remova.
+  const pai = document.getElementById('pai');
+    const todosOsFilhos = pai.childNodes;
+
+    for (let index = todosOsFilhos.length - 1; index >= 0; index -= 1) {
+      const filhoAtual = todosOsFilhos[index];
+      if (filhoAtual.id !== 'elementoOndeVoceEsta') {
+        filhoAtual.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho'); // Recupera o elemento com o id segundoEUltimoFilhoDoFilho
+    segundoEUltimoFilhoDoFilho.remove(); // Remove o segundo filho do filho
 </script>
+</html>
