@@ -1,0 +1,45 @@
+#header{
+    color: blue;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    background-color: aquamarine;
+    padding: 1em;
+    margin: auto;
+   
+}
+
+.facts h2{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.titulo-principal{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.links {
+    background-color: yellow; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+
+  }
+
+  .footer{
+    color: red;
+    background-color: rgb(182, 228, 230);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: table;
+  }
