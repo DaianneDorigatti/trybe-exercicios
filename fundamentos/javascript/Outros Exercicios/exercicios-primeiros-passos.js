@@ -8,23 +8,23 @@
 const a = 2;
 const b = 3;
 
-soma = a+b; 
+soma = a + b;
 console.log(soma);
 
 
-subtracao = a-b; 
+subtracao = a - b;
 console.log(subtracao);
 
 
-multiplicacao = a*b; 
+multiplicacao = a * b;
 console.log(multiplicacao);
 
 
-divisao = a/b; 
+divisao = a / b;
 console.log(divisao);
 
 
-modulo = a%b; 
+modulo = a % b;
 console.log(modulo);
 
 
@@ -41,5 +41,7 @@ console.log(valor);
 const num1 = 10;
 const num2 = 20;
 const num3 = 30;
+
+
 
 
