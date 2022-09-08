@@ -1,4 +1,103 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FORMULARIO</h1>
+    <form action="" method="GET">
+      <input
+        type="checkbox"
+        id="esporte-1"
+        value="fut"
+        name="esporte"
+        checked
+      />Futebol
+      <input type="checkbox" id="esporte-2" value="vol" name="esporte" />Vôlei
+      <input type="checkbox" id="esporte-3" value="pet" name="esporte" />Peteca
+      <input
+        type="checkbox"
+        id="esporte-4"
+        value="bas"
+        name="esporte"
+      />Basquete
+      <br />
+      <br />
+      <label for="hub1"
+        ><input type="radio" id="hub1" name="hub" value="sp" />São Paulo</label
+      >
+      <label for="hub2"
+        ><input type="radio" id="hub2" name="hub" value="bh" />Belo
+        Horizonte</label
+      >
+      <label for="hub3"
+        ><input
+          type="radio"
+          id="hub3"
+          name="hub"
+          value="fl"
+        />Florianópolis</label
+      >
+      <label for="hub4"
+        ><input type="radio" id="hub4" name="hub" value="mc" />Macedônia</label
+      >
+    </form>
+  </body>
+</html>
+
+<!-- => form action: pra onde vou enviar os dados do formulário. form method: qual é o
+=> tipo de método http - get ou post. input: é o tipo de entrada de dados do
+=> usuário. button: pra submeter o form pra algum lugar. 
+=> placeholder é a descrição que coloca logo abaixo pra saber o que digitar no form.
+=> required é para deixar o campo obrigatório.
+=> value já deixa um campo preenchido.
+=> name é o nome que vai pro campo quando colocar o valor. Ele que vai na URL.
+=> label explica o que é o campo.
+=> for cria um vinculo entre a label e o campo em si.
+=> para criar um vinuulo do input com o label, pega o id do input e coloca dentro do for.
+=> text-area é um campo maior pra colocar mais informações.
+=> checked já começa com o checkbox marcado.
+=> no caso do name, para que fiquem todos no mesmo contexto, o nome deve ser igual.Ex: para selecionar mais que um radio ao mesmo tempo.
+=> colocar os inputs dentro de labels, faz com que possa ser selecionado o radio clicando na própria palavra ao invés de ter que clicar na bolinha.
+=> select serve para colocar opções de seleção na tela.
+=> password é usado pra senha
+=> file é usado para arquivos, por exemplo fotos. Caso use o método post, é preciso colocar o enctype="multipart/form-data".
+=> submit vai enviar os dados do form.
+-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FORMULARIO</h1>
+    <form action="" method="GET">
+      <select name="estado" id="dropdown-estado">
+        <option value="sp">São Paulo</option>
+        <option value="ba">Bahia</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="am">Amazonas</option>
+      </select>
+      <br />
+      <br />
+      <input type="password" name="senha" />
+      <br />
+      <br />
+      <input type="file" name="" id="" />
+      <button type="submit" class="" name="" id="">Enviar</button>
+    </form>
+  </body>
+</html> -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- 
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -27,20 +126,7 @@ texto já estabelecido</textarea
   </body>
 </html> -->
 
-<!-- 
-=> form action: pra onde vou enviar os dados do formulário. form method: qual é o
-=> tipo de método http - get ou post. input: é o tipo de entrada de dados do
-=> usuário. button: pra submeter o form pra algum lugar. 
-=> placeholder é a descrição que coloca logo abaixo pra saber o que digitar no form.
-=> required é para deixar o campo obrigatório.
-=> value já deixa um campo preenchido.
-=> name é o nome que vai pro campo quando colocar o valor. Ele que vai na URL.
-=> label explica o que é o campo.
-=> for cria um vinculo entre a label e o campo em si.
-=> para criar um vinuulo do input com o label, pega o id do input e coloca dentro do for.
-=> text-area é um campo maior pra colocar mais informações.
-=> checked já começa com o checkbox marcado.
- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -52,7 +138,43 @@ texto já estabelecido</textarea
   <body>
     <h1>FORMULARIO</h1>
     <form action="" method="GET">
-      <input type="checkbox" value="" name="" checked />
+      <input
+        type="checkbox"
+        id="esporte-1"
+        value="fut"
+        name="esporte"
+        checked
+      />Futebol
+      <input type="checkbox" id="esporte-2" value="vol" name="esporte" />Vôlei
+      <input type="checkbox" id="esporte-3" value="pet" name="esporte" />Peteca
+      <input
+        type="checkbox"
+        id="esporte-4"
+        value="bas"
+        name="esporte"
+      />Basquete
+      <br />
+      <br />
+      <label for="hub1"
+        ><input type="radio" id="hub1" name="hub" value="sp" />São Paulo</label
+      >
+      <label for="hub2"
+        ><input type="radio" id="hub2" name="hub" value="bh" />Belo
+        Horizonte</label
+      >
+      <label for="hub3"
+        ><input
+          type="radio"
+          id="hub3"
+          name="hub"
+          value="fl"
+        />Florianópolis</label
+      >
+      <label for="hub4"
+        ><input type="radio" id="hub4" name="hub" value="mc" />Macedônia</label
+      >
     </form>
   </body>
 </html>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
